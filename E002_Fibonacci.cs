@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HackRank
 {
-    class E003_Fibonacci
+    class E002_Fibonacci
     {
         private static int maxNmbr = 4000000;
 

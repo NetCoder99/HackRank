@@ -9,11 +9,12 @@ namespace HackRank
     {
         static long sumPrimes = 0;
         static List<long> primeArray = new List<long>();
-        static int limit = 2000000;
+        //static int limit = 2000000;
+        static int limit = 1000;
 
         public static void runProc()
         {
-            for (int idx = 1; idx < limit; idx = idx+2)
+            for (int idx = 1; idx < limit; idx = idx+1)
             {
                 if (IsPrime.CheckForPrime(idx))
                 {
