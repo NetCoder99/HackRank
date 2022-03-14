@@ -14,7 +14,9 @@ namespace HackRank
             //List<string> userNames = new List<string> { "bee", "superhero", "ace" };
             //E010_primeSums.runProc();
             //Leet_Three_SumV3.Execute();
-            Leet_Valid_Parentheses.Execute();
+            //Leet_Valid_Parentheses.Execute();
+            //new HackRank.LeetCode.LinkListSum().Execute();
+            new HackRank.LeetCode.Leet_SimplifyPath().Execute();
         }
     }
 }
