@@ -7,16 +7,17 @@ namespace HackRank
     {
         static void Main(string[] args)
         {
-            //HackPreview001.FizzBuzz(15);
-            //E003_Fibonacci.runProc();
-            //E008_largeProduct.runProc();
 
-            //List<string> userNames = new List<string> { "bee", "superhero", "ace" };
-            //E010_primeSums.runProc();
-            //Leet_Three_SumV3.Execute();
-            //Leet_Valid_Parentheses.Execute();
-            //new HackRank.LeetCode.LinkListSum().Execute();
-            new HackRank.LeetCode.Leet_SimplifyPath().Execute();
+            CurrencyConverterRepository currencyConverterRepository = new CurrencyConverterRepository();
+            CurrencyConverter currencyConverter = new CurrencyConverter(currencyConverterRepository);
+
+
+            Console.WriteLine("Expected = 20.56, Actual = " + currencyConverter.GetConvertedAmount("USD", "MXN", 1));
+            Console.WriteLine( "Expected = 6.36, Actual = " + currencyConverter.GetConvertedAmount("USD", "CAD", 5) );
+            Console.WriteLine( "Expected = 0.62, Actual = " + currencyConverter.GetConvertedAmount("MXN", "CAD", 10) );
+            Console.WriteLine( "Expected = 0.61, Actual = " + currencyConverter.GetConvertedAmount("DKK", "PLN", 1) );
+
+
         }
     }
 }
